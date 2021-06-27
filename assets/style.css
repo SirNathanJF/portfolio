@@ -1,0 +1,47 @@
+/*Structures page and sets font type for page*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*Sets background color of body and structure*/
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+/*Sets up our flex box in the header*/
+header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+    padding: 0 50px 0 0;
+}
+/*Styling for the name class*/
+.name {
+    margin: 10px;
+    padding: 5px 5px 5px 20px;
+    background-color: rgb(4, 91, 141);
+    color: darkgray;
+    font-size: 2.5em;
+    box-sizing: 0px
+}
+/*Removes bullets from navigation bar, positions links side by side, changes font size of links*/
+nav ul li {
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(4, 91, 141);
+    padding: 0 10px 0 10px;
+    font-size: 1.5em;
+}
+/*Gets rid of standard hyperlink underline, adjusts color of links*/
+nav li a {
+    text-decoration: none;
+    color: rgb(4, 91, 141);
+}
