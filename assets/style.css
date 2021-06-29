@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
 }
-/*Sets up our flex box in the header*/
+/*Sets up our flex box in the header, sets up name and nav bar to be on opposite ends of the same space*/
 header {
     display: flex;
     flex: 1;
@@ -40,7 +40,7 @@ nav ul li {
     padding: 0 10px 0 10px;
     font-size: 1.5em;
 }
-/*Gets rid of standard hyperlink underline, adjusts color of links*/
+/*Gets rid of standard hyperlink underline, adjusts color of the link text*/
 nav li a {
     text-decoration: none;
     color: rgb(4, 91, 141);
