@@ -1,17 +1,14 @@
 /*declares variables for multiple occasions*/
 :root {
     --white: #f5f5f5;
-    --gray: #a9a9a9;
-    --blue: rgb(4,91,141);
-    --purple: #483d8b;
-
-
+    --lightpink: rgb(243, 202, 226);
+    --purple: #2b153d;
 }
 
 /*Structures page and sets font type for page*/
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
     margin: 0;
     padding: 0;
 }
@@ -29,7 +26,7 @@ header {
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--gray);
+    background-color: var(--lightpink);
     padding: 0 50px 0 0;
     color: da
 }
@@ -38,8 +35,8 @@ header {
 .name {
     margin: 10px;
     padding: 5px 5px 5px 20px;
-    background-color: var(--blue);
-    color: var(--gray);
+    background-color: var(--purple);
+    color: var(--lightpink);
     font-size: 2.5em;
     box-sizing: 0px
 }
@@ -51,7 +48,7 @@ nav ul li {
     flex-direction: row;
     margin-right: 5px;
     cursor: pointer;
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 2px solid var(--purple);
     padding: 0 10px 0 10px;
     font-size: 1.5em;
 }
@@ -59,22 +56,18 @@ nav ul li {
 /*Gets rid of standard hyperlink underline, adjusts color of the link text*/
 nav li a {
     text-decoration: none;
-    color: var(--blue);
+    color: var(--purple);
 }
 
 /*sets up flex box and dimensions for backgground image*/
 .banner_image {
     display:flex;
-    background-image: url(./images/Andromeda_galaxy.jpeg) ;
+    background-image: url(./images/galaxy3.jpg) ;
     background-size: auto;
-    height: 33vh;
+    height: 20vh;
     width: 100%;
     flex: 1;
-}
-
-/*sets up headshot to scroll with page*/
-.headshot {
-    position: fixed;
+    z-index: -2;
 }
 
 main {
@@ -85,6 +78,7 @@ main {
     width: 100%;
     margin: 0%;
     flex: 100%;
+    z-index: 2;
 }
 
 main section {
@@ -95,10 +89,23 @@ main section {
 
 .lefthand_column {
     display: flex;
-    margin: 0;
+    margin-left: 20vh;
+    margin-right: 1vh;
     text-align: right;
     word-wrap: normal;
-    font-size: 1.5em;
+    font-size: 2em;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
+}
+
+.righthand_column {
+    display: flex;
+    flex-flow: row wrap;
+    border-left: 5px solid var(--purple);
+    justify-content: center;
+    align-items: center;
+}
+#p_aboutme {
+    padding: 30px;
+    font-size: 1.2em;
 }
