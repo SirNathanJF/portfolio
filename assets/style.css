@@ -15,12 +15,14 @@
     margin: 0;
     padding: 0;
 }
+
 /*Sets background color of body and structure*/
 body {
     background-color: var(--white);
     margin: 0;
     padding: 0;
 }
+
 /*Sets up our flex box in the header, sets up name and nav bar to be on opposite ends of the same space*/
 header {
     display: flex;
@@ -31,6 +33,7 @@ header {
     padding: 0 50px 0 0;
     color: da
 }
+
 /*Styling for the name class*/
 .name {
     margin: 10px;
@@ -40,6 +43,7 @@ header {
     font-size: 2.5em;
     box-sizing: 0px
 }
+
 /*Removes bullets from navigation bar, positions links side by side, changes font size of links*/
 nav ul li {
     list-style-type: none;
@@ -51,11 +55,13 @@ nav ul li {
     padding: 0 10px 0 10px;
     font-size: 1.5em;
 }
+
 /*Gets rid of standard hyperlink underline, adjusts color of the link text*/
 nav li a {
     text-decoration: none;
     color: var(--blue);
 }
+
 /*sets up flex box and dimensions for backgground image*/
 .banner_image {
     display:flex;
@@ -65,18 +71,34 @@ nav li a {
     width: 100%;
     flex: 1;
 }
+
 /*sets up headshot to scroll with page*/
 .headshot {
     position: fixed;
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     color: var(--purple);
     width: 100%;
     margin: 0%;
     flex: 100%;
+}
+
+main section {
+    display: flex;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.lefthand_column {
+    display: flex;
+    margin: 0;
+    text-align: right;
+    word-wrap: normal;
+    font-size: 1.5em;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
