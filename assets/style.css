@@ -26,7 +26,7 @@ header {
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--lightpink);
+    background-color: var(--white);
     padding: 0 50px 0 0;
     color: da
 }
@@ -35,8 +35,7 @@ header {
 .name {
     margin: 10px;
     padding: 5px 5px 5px 20px;
-    background-color: var(--purple);
-    color: var(--lightpink);
+    color: var(--purple);
     font-size: 2.5em;
     box-sizing: 0px
 }
@@ -60,7 +59,7 @@ nav li a {
 }
 
 /*sets up flex box and dimensions for backgground image*/
-.banner_image {
+.banner {
     display:flex;
     background-image: url(./images/galaxy3.jpg) ;
     background-size: auto;
@@ -68,6 +67,11 @@ nav li a {
     width: 100%;
     flex: 1;
     z-index: -2;
+}
+
+.headshot {
+    height: 20vh;
+    width: 20vh;
 }
 
 main {
@@ -105,6 +109,7 @@ main section {
     justify-content: center;
     align-items: center;
 }
+
 #p_aboutme {
     padding: 30px;
     font-size: 1.2em;
