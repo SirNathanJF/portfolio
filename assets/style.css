@@ -1,3 +1,8 @@
+/*declares variables for multiple occasions*/
+:root {
+    var
+}
+
 /*Structures page and sets font type for page*/
 * {
     box-sizing: border-box;
@@ -44,4 +49,15 @@ nav ul li {
 nav li a {
     text-decoration: none;
     color: rgb(4, 91, 141);
+}
+.banner_image {
+    display:flex;
+    background-image: url(./images/Andromeda_galaxy.jpeg) ;
+    background-size: auto;
+    height: 33vh;
+    width: 100%;
+    flex: 1;
+}
+.headshot {
+    position: fixed;
 }
