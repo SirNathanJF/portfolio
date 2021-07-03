@@ -128,7 +128,7 @@ main section {
 }
 
 .project1 {
-    background-image: linear-gradient(rgba(70, 90, 120, 0.5), rgba(70, 90, 120, 0.5)), url(./images/ScreenshotTripleX.PNG);
+    background-image: linear-gradient(rgba(70, 90, 120, 0.5), rgba(70, 90, 120, 0.5)), url(./images/ScreenshotTripleX.PNG) ;
     display: flex;
     height: 50vh;
     margin: 20px;
@@ -168,4 +168,17 @@ main section {
     justify-content: flex-start;
     background-size: contain;
     align-items: flex-end;
+}
+
+
+.project1:hover{
+    background-image: url(./images/ScreenshotTripleX.PNG);
+}
+
+.project2:hover{
+    background-image: url(./images/CatMouse.PNG);
+}
+
+.project3:hover, .project4:hover, .project5:hover{
+    background-image: url(./images/comingsoon.png);
 }
