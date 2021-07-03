@@ -128,7 +128,7 @@ main section {
 }
 
 .project1 {
-    background-image: url(./images/ScreenshotTripleX.PNG);
+    background-image: linear-gradient(rgba(70, 90, 120, 0.5), rgba(70, 90, 120, 0.5)), url(./images/ScreenshotTripleX.PNG);
     display: flex;
     height: 50vh;
     margin: 20px;
@@ -136,18 +136,36 @@ main section {
     flex: 100%;
 }
 
-.project2 {
-    background-image: url(./images/CatMouse.PNG);
+.project2{
+    background-image: linear-gradient(rgba(70, 90, 120, 0.5), rgba(70, 90, 120, 0.5)), url(./images/CatMouse.PNG);
     display: inline-flex;
     height: 20vh;
     flex: 35%;
     justify-content: center;
     width: 50%;
-    margin: 0 20px 20px 20px;
+    margin: 0 0 20px 20px;
 }
+
+.project4{
+    margin: 0 0 20px 20px;
+}
+
+.project3, .project5{
+    margin: 0 0 20px 20px;
+}
+
+.project3, .project4, .project5{
+    background-image: linear-gradient(rgba(70, 90, 120, 0.5), rgba(70, 90, 120, 0.5)), url(./images/comingsoon.png);
+    display: inline-flex;
+    height: 20vh;
+    flex: 35%;
+    justify-content: center;
+    width: 50%;
+}
+
 .project1, .project2, .project3, .project4, .project5 {
     cursor: pointer;
     justify-content: flex-start;
-    background-size: cover;
+    background-size: contain;
     align-items: flex-end;
 }
