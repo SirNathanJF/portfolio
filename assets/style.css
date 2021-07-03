@@ -182,3 +182,7 @@ main section {
 .project3:hover, .project4:hover, .project5:hover{
     background-image: url(./images/comingsoon.png);
 }
+
+.work a {
+    text-decoration: none;
+}
