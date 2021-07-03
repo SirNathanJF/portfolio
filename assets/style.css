@@ -77,12 +77,13 @@ nav li a {
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     color: var(--purple);
     width: 100%;
     margin: 0%;
     flex: 100%;
-    z-index: 2;
 }
 
 main section {
@@ -108,6 +109,7 @@ main section {
     border-left: 5px solid var(--purple);
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 #p_aboutme {
@@ -115,14 +117,37 @@ main section {
     font-size: 1.2em;
 }
 
+.text_project {
+    color: var(--white);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-self: bottom;
+    background-color: var(--purple);
+    padding: 10px;
+}
+
 .project1 {
+    background-image: url(./images/ScreenshotTripleX.PNG);
     display: flex;
     height: 50vh;
-    margin: 5vh;
+    margin: 20px;
+    width: 100%;
+    flex: 100%;
 }
 
 .project2 {
+    background-image: url(./images/CatMouse.PNG);
     display: inline-flex;
     height: 20vh;
     flex: 35%;
+    justify-content: center;
+    width: 50%;
+    margin: 0 20px 20px 20px;
+}
+.project1, .project2, .project3, .project4, .project5 {
+    cursor: pointer;
+    justify-content: flex-start;
+    background-size: cover;
+    align-items: flex-end;
 }
