@@ -8,7 +8,7 @@
 /*Structures page and sets font type for page*/
 * {
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -263,7 +263,7 @@ footer{
         margin: 10px 10px 10px 20px;
         flex: 100%;
     }
-
+}
 /*This will set up the view for anything up to 768px which will satisfy phones*/
 @media screen and (max-width: 768px) {
     header{
