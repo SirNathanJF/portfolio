@@ -304,9 +304,16 @@ footer{
         border: none;
     }
 
-    .project1, .project2, .project3, .project4, .project5{
+    .project1{
         height: 20vh;
         width: 100%;
+        margin: 10px;
+        flex: 100%;
+    }
+
+    .project2, .project3, .project4, .project5{
+        height: 10vh;
+        width: 50%;
         margin: 10px;
         flex: 100%;
     }
